@@ -38,7 +38,6 @@ namespace recap.Controllers
             streamReader.Close();
         }
 
-
         public void afisarePersoane()
         {
 
@@ -46,6 +45,25 @@ namespace recap.Controllers
             { 
                 Console.WriteLine(persoana.descriere());
             }
+        }
+
+        public bool verificare(Persoana persoana)
+        {
+
+            for(int i=0;i<persoane.Count;i++)
+            {
+                if (persoana.Nume.Equals(persoane[i].Nume) && persoana.Prenume.Equals(persoane[i].Prenume))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public void addPersoana(Persoana persoana)
+        {
+            persoane.Add(persoana);
         }
 
     }
