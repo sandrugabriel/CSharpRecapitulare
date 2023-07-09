@@ -5,7 +5,13 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        string path = @"/data/masini.txt";
 
+       // ControllerMasiniTest controllerMasiniTest = new ControllerMasiniTest();
+
+        ControllerMasini controllerMasini = new ControllerMasini(path);
+        controllerMasini.load();
+/*
         Persoana persoana1 = new Persoana("1|Sandru|Gabi|17|1,80");
         Persoana persoana2 = new Persoana("2|Ana|Maria|15|1,70");
         Persoana persoana3 = new Persoana("3|Dan|Alex|14|1,69");
@@ -14,7 +20,7 @@ internal class Program
 
         persoana1 = persoana2;
 
-        persoana1.Varsta = 23;
+        persoana1.Varsta = 23;*/
 
         //  Console.WriteLine("Persoana1: " + persoana1.descriere() + "\nPersoana2: " + persoana2.descriere() + "\nPersoana3: " + persoana3.descriere() + "\nPersoana4: " + persoana4.descriere());
 /*

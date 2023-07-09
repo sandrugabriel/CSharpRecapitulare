@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace recap.models
 {
-    internal class Masina
+    public class Masina
     {
 
         private int _id;
@@ -80,6 +80,10 @@ namespace recap.models
             return t;
         }
 
+        public string toSave()
+        {
+            return Id.ToString() + "|" + Marca + "|" + Model + "|" + Km.ToString() + "|" + Pretul.ToString();
+        }
 
     }
 }
