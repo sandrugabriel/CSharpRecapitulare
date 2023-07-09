@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace recap.models
 {
-    internal class Carte
+    public class Carte
     {
 
         private int _id;
@@ -69,6 +69,11 @@ namespace recap.models
             t += "Anul: " + _anul.ToString() + "\n";
 
             return t;
+        }
+
+        public string toSave()
+        {
+            return Id.ToString() + "|" + Name + "|" + Autorul + "|" + Anul.ToString();
         }
 
     }

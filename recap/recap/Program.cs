@@ -17,7 +17,7 @@ internal class Program
         persoana1.Varsta = 23;
 
         //  Console.WriteLine("Persoana1: " + persoana1.descriere() + "\nPersoana2: " + persoana2.descriere() + "\nPersoana3: " + persoana3.descriere() + "\nPersoana4: " + persoana4.descriere());
-
+/*
         ControllerPersoane controllerPersoane = new ControllerPersoane();
         if (controllerPersoane.verificare(persoana1))
         {
@@ -26,12 +26,12 @@ internal class Program
         else
         {
             Console.WriteLine("Introduceti alt nume si prenume");
-        }
+        }*/
 
-        ControllerMasini controllerMasini = new ControllerMasini();
+      //  ControllerMasini controllerMasini = new ControllerMasini();
        // controllerMasini.afisare();
 
-        ControllerCarte controllerCarte = new ControllerCarte();
+     //   ControllerCarte controllerCarte = new ControllerCarte();
        // controllerCarte.afisare();
 
 

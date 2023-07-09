@@ -12,18 +12,18 @@ namespace recap.Controllers
 
 
         private List<Persoana> persoane;
-
-        public ControllerPersoane() { 
+        private string _path;
+        public ControllerPersoane(string path) { 
         
             persoane = new List<Persoana>();
             load();
-        
+            this._path = path;
         }
 
         public void load()
         {
 
-            string path = Directory.GetCurrentDirectory()+@"/data/persoane.txt";
+            string path = Directory.GetCurrentDirectory() + _path;
             
             StreamReader streamReader = new StreamReader(path);
 
