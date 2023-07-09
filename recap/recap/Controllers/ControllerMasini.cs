@@ -11,18 +11,19 @@ namespace recap.Controllers
     {
 
         private List<Masina> masini;
+        private string _path;
 
-        public ControllerMasini() { 
+        public ControllerMasini(string path) { 
         
             masini = new List<Masina>();
             load();
-        
+            this._path = path;
         }
 
         public void load()
         {
 
-            string path = Directory.GetCurrentDirectory() + @"/data/masini.txt";
+            string path = Directory.GetCurrentDirectory() + _path;
 
             StreamReader streamReader = new StreamReader(path);
 
