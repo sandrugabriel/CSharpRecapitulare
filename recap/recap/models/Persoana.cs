@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace recap.models
 {
-    internal class Persoana
+    public class Persoana
     {
 
         private int _idPersoana;
@@ -80,6 +80,11 @@ namespace recap.models
             t += "Inaltimea: " + _inaltimea.ToString() + "\n";
 
             return t;
+        }
+
+        public string toSave()
+        {
+            return IdPersoana.ToString() + "|" + Nume + "|" + Prenume + "|" + Varsta + "|" + Inaltime;
         }
 
     }
